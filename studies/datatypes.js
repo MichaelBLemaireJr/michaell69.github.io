@@ -16,3 +16,10 @@ Numbers can't be used as variable names they are apart of the computer themselve
 but words have no meaning to computers
 */
 42;
+//var 42 = "This WIll not work";
+
+/*
+Boolean is a primitive datatype consisting of true and false
+*/
+var trues = true;
+var falsey = false;
