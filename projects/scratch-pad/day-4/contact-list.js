@@ -69,6 +69,17 @@ function makeContactList() {
         },
         removeContact: function(contact){
             return contacts.splice(contact, 1);
+        },
+        printAllContactNames: function(){
+            var allNames = "";
+            for(var i = 0; i < contacts.length; i++){
+                if(i === contacts .length - 1){
+                    allNames += `${contacts[i].nameFirst} ${contacts[i].nameLast}`;
+                }else{
+                allNames += `${contacts[i].nameFirst} ${contacts[i].nameLast}\n`;
+                }
+            }
+            return allNames;
         }
 };
 }
