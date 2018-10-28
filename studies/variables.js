@@ -23,3 +23,8 @@ let age = 42;
 console.log(name); //prints "Michael"
 console.log(NAME_LAST); //prints "LeMaire"
 console.log(age); //prints 42
+/*
+Hoisting is something that happens in a scope, it happens before running the code
+Hoisting is when the code reader runs through the code first and looks for variables
+and functions to pull to the top of the scope
+*/
