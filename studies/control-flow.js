@@ -21,3 +21,18 @@ if(bool === true){
 } else {
     console.log("this is false");
 }
+
+/*
+SWITCH: swtich works like an if statement exect it checks one variable and checks
+it for multiplew cases and defaults to default
+*/
+switch(bool){
+    case "hello": 
+        console.log("hello");
+        break;
+    case true: 
+        console.log(true);
+        break;
+    default: 
+        console.log(false);
+}
