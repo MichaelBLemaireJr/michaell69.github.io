@@ -19,8 +19,13 @@
 
 ## Review Questions from Module One Handbook?
  - what can we `typeof` ?
+ - we can typeof numbers, strings, booleans, objects, undefined, and functions
  - what can't we `typeof` ?
+ - We can't typeof arrays, null, and Date;
  - how do we check those things?
+ - to check arrays we use Array.isArray(array) it will return true or false
+ - for null we would compare the value to the null keyword
+ - and for Date we use instanceof on the value like so {value instanceof Date}
  - Array.isArray()
  - null === null
 
