@@ -226,9 +226,9 @@ function removeProperties(object, array) {
 
 function dedup(array) {
     array.sort();
-    for(var i = array.length; i--;){
-        if(array[i] === array[i - 1]){
-            array.splice(i,1);
+    for(var i = array.length; i >= 0; i--){
+    if(array[i] === array[i - 1]){
+      array.splice(i,1);
     }
     
   }
