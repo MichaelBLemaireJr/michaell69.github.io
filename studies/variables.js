@@ -2,7 +2,6 @@
 Variables- Variables hold information so we don't lose them while the program is running
 variables are declared using the key word "var" and an appropraite name for the data its storing
 Finally you must use the assignment operator "=" followed by the data you want to store
-
 */
 var string = "";
 
@@ -24,7 +23,6 @@ console.log(name); //prints "Michael"
 console.log(NAME_LAST); //prints "LeMaire"
 console.log(age); //prints 42
 /*
-Hoisting is something that happens in a scope, it happens before running the code
-Hoisting is when the code reader runs through the code first and looks for variables
-and functions to pull to the top of the scope
+Hoisting is when a block of code is ran the variable names get Hoisting to the top and evaluated first but not what they are assigned to
+that gets evaluated when it comes to that line
 */

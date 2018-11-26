@@ -2,11 +2,13 @@
     LOOPS: there are 3 diffrent types of loops, while, for, and for-in loops
 */
 
-//we use for loops to loop from some beginning number till the end condition changing the number each time
-//so we don't end up with a infinite loop
+//we use for loops to run a specific set of code as many times as we need it to
 //the setting of i to 0 is the starting point of the loop
 //i < 6 is the stop condition
 //finally i++ is increminting i everytime it exicutes the code
+//if our final condition is set in which we will never meet our stop condition
+//,in this case when i is less than 6; this would create an infinite loop that will
+//crash our application
 for(let i = 0; i < 6; i++){
     console.log(i);
 }

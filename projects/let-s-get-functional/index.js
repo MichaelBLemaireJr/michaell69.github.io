@@ -102,6 +102,9 @@ var friendFirstLetterCount = function(array, customer, character){
 
 var friendsCount = function(array, name){
     var arr  = [];
+    if(name === undefined){
+        return [];
+    }
     _.each(array, (customer) => {
         _.each(customer.friends, function(friend){
             if(friend.name.toUpperCase() === name.toUpperCase()){
@@ -109,12 +112,40 @@ var friendsCount = function(array, name){
             }
         });
     });
-    console.log(arr);
+    // console.log(arr);
     return arr;
 };
 
 var topThreeTags = function(arr){
+    let topTags = [];
+    let tag = {};
+    _.each(arr, function(customer){
+        _.each(customer.tags, function(currentTag){
+            let keys = Object.keys(tag);
+            if(_.contains(keys, currentTag)){
+                tag[currentTag]++;
+            }else{
+                tag[currentTag] = 1;
+            }
+        });
+    });
     
+    let vals =  Object.keys(tag).map(function(key) {
+    return tag[key];
+});
+    let sortedValues = _.unique(vals.sort(function(a, b){return b-a}));
+    console.log(sortedValues);
+    _.each(sortedValues, function(element, index){
+        _.each(tag, function(value, key){
+            if(topTags.length === 3){
+            return;
+        } else if(tag[key] >= element){
+            topTags.push(key);
+        }
+        });
+    });
+   
+    return _.unique(topTags);
 };
 
 var genderCount = (arr) =>{

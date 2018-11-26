@@ -1,9 +1,9 @@
-
-
-/*
-Hoisting is when a block of code is ran the variable names get Hoisting to the top and evaluated first but not what they are assigned to
-that gets evaluated when it comes to that line
+/**
+ * Strings are simple datatypes that are any letters, numbers, or symbols you want inside of quotes
+ * strings have there own propteries like length 
 */
+var string = "@#abc42";
+
 /*
 Numbers can't be used as variable names they are apart of the computer themselves unlike words there are only so many numbers 
 but words have no meaning to computers
@@ -60,8 +60,8 @@ Number.NEGATIVE_INFINITY;
 //Complex data types can hold an infinite amount of data and store any type of data
 //these datatypes include arrays, objects, functions 
 
-//Passing by copy means to directly refrence the whole value
-//passing by refrence means to refrence a value inside an complex datatype
+//Copy by value means to directly refrence the whole value
+//Copy by refrence means to refrence a value inside an complex datatype
 var bool = true;
 console.log(bool); //refrence by copy
 

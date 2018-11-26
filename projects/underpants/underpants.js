@@ -246,17 +246,12 @@ _.reject = function(array, callback){
 */
 _.partition = (collection, callback) => {
     let result = [];
-    let truthy = [];
-    let falsey = [];
-    _.each(collection, function(e, i, arr){
-        if(callback(e, i, arr)){
-            truthy.push(e);
-        } else{
-            falsey.push(e);
-        }
-    });
-    result.push(truthy);
-    result.push(falsey);
+    result.push(_.filter(collection, function(e, i, a){
+        return callback(e, i, a);
+    }));
+    result.push(_.reject(collection, function(e, i, a){
+        return callback(e, i, a);
+    }));
     return result;
 };
 

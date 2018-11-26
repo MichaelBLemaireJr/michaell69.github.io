@@ -5,7 +5,12 @@ IF statement: if statements check a certain contition and if that condition eval
 */  
 if(true){
     console.log("this is true");
-} else{
+}
+/**
+ * Else statement: else statements are what an if else statement defaults to if all 
+ * of the above if statements evaluate to false, but else statements are not mandatory 
+*/
+else{
     console.log("this is false");
 }
 
@@ -24,7 +29,12 @@ if(bool === true){
 
 /*
 SWITCH: swtich works like an if statement exect it checks one variable and checks
-it for multiplew cases and defaults to default
+case means that if the value put into the switch statement equals the value you check for
+to the right of the case keyword then we will run the code that in inbetween the case statement
+and the break keyword.
+switch statements use the break keyword to indicate that we do not have to check the next case
+When the switch statement runs into a break statement it stops running
+if all of the case statements evaluate to false then we run the code thats to the right of the colon
 */
 switch(bool){
     case "hello": 
